@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage{import}
+\newcommand*{\sectiondir}{final_draft/}
+
+\import{\sectiondir}{imports.tex}
+
+\title{The EPA's Role in the VW Emissions Scandal}
+\author{Maxwell Ray\\Software Engineering\\CSC 300}
+\date{\today}
+
+\begin{document}
+\pagenumbering{gobble}
+\pagestyle{plain}
+
+\maketitle
+
+%% Abstract
+\import{\sectiondir}{abstract.tex}
+\newpage
+
+%% Table of Contents
+\tableofcontents
+\newpage
+
+\twocolumn
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+%% Facts
+\import{\sectiondir}{facts.tex}
+
+%% Research Question
+\import{\sectiondir}{research_question.tex}
+
+%% Social Implications
+\import{\sectiondir}{social_implications.tex}
+
+%% Others' Arguments
+\import{\sectiondir}{others_arguments.tex}
+
+%% Analysis
+\import{\sectiondir}{analysis.tex}
+
+\newpage
+\onecolumn
+\addcontentsline{toc}{section}{References}
+\nocite{*}
+\bibliographystyle{IEEEannot}
+\bibliography{bibliography}
+
+\end{document}
